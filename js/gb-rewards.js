@@ -27,7 +27,7 @@ const GbRewardCalculator = function() {
   return {
     calculate: function({age, level, position}) {
       if (age === undefined || level === undefined || level < 0 || position === undefined || position < 1)
-        return;
+        return "";
       if (position > 5)
         return 0;
 
